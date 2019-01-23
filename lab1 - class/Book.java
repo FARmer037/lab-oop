@@ -44,10 +44,4 @@ public class Book {
     public void setAuthorName(String authorName) {
         this.authorName = authorName;
     }
-
-    public void change(String title, int numberOfPage) {
-        this.title = title;
-        this.numberOfPage = numberOfPage;
-    }
-
 }

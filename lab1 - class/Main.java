@@ -21,11 +21,12 @@ public class Main {
         mybook1.setTitle("OOP");
         mybook1.setNumberOfPage(1000);
 
+        mybook2.setTitle("Networ");
+        mybook2.setNumberOfPage(600);
+
         mybook1.setAuthorName("Somkid");
         mybook2.setAuthorName("Somsuk");
         mybook3.setAuthorName("Somchai");
-
-        mybook2.change("Network", 600);
 
         System.out.println("Title is " + mybook1.getTitle() +
                 " Number of page is " + mybook1.getNumberOfPage() +
