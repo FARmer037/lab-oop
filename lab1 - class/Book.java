@@ -44,4 +44,13 @@ public class Book {
     public void setAuthorName(String authorName) {
         this.authorName = authorName;
     }
+
+    public boolean isSameBook(Book b) {
+        if (this.title.compareTo(b.getTitle()) == 0 && this.numberOfPage == b.getNumberOfPage() && this.authorName.compareTo(b.getAuthorName()) == 0) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
 }
