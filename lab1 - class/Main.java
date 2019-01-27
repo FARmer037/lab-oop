@@ -28,6 +28,6 @@ public class Main {
                 " Number of page is " + mybook3.getNumberOfPage() +
                 " Author name is " + mybook1.getAuthorName());
 
-        System.out.println(mybook1.isSameBook(mybook4));
+        System.out.println(mybook1.isSameBook(mybook3));
     }
 }
