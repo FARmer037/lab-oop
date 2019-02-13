@@ -1,22 +1,22 @@
 import java.util.ArrayList;
 public class StudentList {
-    private ArrayList<Student> stList;
+    private ArrayList<Student> stdList;
     private int numberOfStudent;
   
     public StudentList(){  
-        stList = new ArrayList<Student>();  
+        stdList = new ArrayList<Student>();  
         numberOfStudent=0;
     }
     public void addStudent(Student students){  
-        stList.add(students); 
+        stdList.add(students); 
     }
     public void removeStudentBystCode(int stCode){
-        if ((stCode >= 0) && (stCode < stList.size())) {
-            stList.remove(stCode);
+        if ((stCode >= 0) && (stCode < stdList.size())) {
+            stdList.remove(stCode);
         }
     }
     public void showAllStudentInfo() {
-        for (Student st: stList) {
+        for (Student st: stdList) {
             System.out.println(st);
         }
     }
@@ -26,16 +26,14 @@ public class StudentList {
     }
 
     public int number () {  
-        return stList.size();    
+        return stdList.size();    
     }  
     public Student searchStudentBystCode(int stCode) {
         Student st=null;
-        if ((stCode >= 0)&&(stCode < stList.size())) { // if a valid note number
-            st = stList.get(stCode);
-            System.out.println(stList.get(stCode) );
+        if ((stCode >= 0)&&(stCode < stdList.size())) { // if a valid note number
+            st = stdList.get(stCode);
+            System.out.println(stdList.get(stCode) );
     }
     return st;
-    // System.out.println(stList.get(stCode) );
-  
     }
 }  

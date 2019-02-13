@@ -7,9 +7,9 @@ public class Main{
         System.out.println(" ");
         //Iterator
         StudentList st = new StudentList();
-        st.addStudent(new Student(10,"janejira",2.58));
-        st.addStudent(new Student(11,"kamonnet",3.90));
-        st.addStudent(new Student(12,"kratai",2.82));
+        st.addStudent(new Student(1020,"Muhammadsoreen",2.58));
+        st.addStudent(new Student(1122,"Madsoffee",2.90));
+        st.addStudent(new Student(1202,"Affan",3.00));
             System.out.println("addStudent:");  
         st.showAllStudentInfo();
             System.out.println("number of Student:" +st.number());
@@ -26,33 +26,31 @@ public class Main{
     public static void testList(){
         ArrayList<Student> students = new ArrayList<Student>();
 
-        Student mhoo = new Student();
-        mhoo.setName("keerati");
-        mhoo.setCode(111);
-        mhoo.setGPA(3.20);
-        students.add(mhoo);
+        Student std1 = new Student();
+        std1.setName("Mustofa");
+        std1.setCode(1412);
+        std1.setGPA(2.25);
+        students.add(std1);
 
-        Student nam = new Student();
-        nam.setName("janjira");
-        nam.setCode(220);
-        nam.setGPA(2.80);
-        students.add(nam);
+        Student std2 = new Student();
+        std2.setName("Usman");
+        std2.setCode(1521);
+        std2.setGPA(2.30);
+        students.add(std2);
 
-        Student kwang = new Student();
-        kwang.setName("penpan");
-        kwang.setCode(121);
-        kwang.setGPA( 3.50);
-        students.add(kwang);
+        Student std3 = new Student();
+        std3.setName("Asmeen");
+        std3.setCode(1565);
+        std3.setGPA( 2.50);
+        students.add(std3);
 
         for (Student st: students) {   //forech
             System.out.println(st);  
         }
         System.out.println("number of Student:" +students.size()); 
         System.out.println(" ");
-        students.remove(nam);
-        /* Student get1 = students.get(1);    
-        System.out.println(get1);
-        */ 
+        students.remove(std2);
+         
         Iterator<Student> it = students.iterator();    //Iterator
             while(it.hasNext()) {
                 Student obj = (Student)it.next();

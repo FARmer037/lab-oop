@@ -1,8 +1,8 @@
 //import java.util.*;
 public class Student {
-    protected int stCode; // student code 
-    protected String name;  
-    protected double gpa;
+    private int stCode; // student code 
+    private String name;  
+    private double gpa;
 
     public Student() { }
     public Student(int c){
